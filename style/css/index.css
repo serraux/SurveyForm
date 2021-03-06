@@ -94,7 +94,9 @@ main #content-form #survey-form label {
   font-family: Roboto, "Century Gothic", sans-serif;
 }
 
-main #content-form #survey-form input {
+main #content-form #survey-form input,
+main #content-form #survey-form select,
+main #content-form #survey-form textarea {
   position: relative;
   margin: 0 auto;
   display: block;
@@ -118,6 +120,52 @@ main #content-form #survey-form #title-radio {
   color: white;
   font-family: Roboto, "Century Gothic", sans-serif;
   text-align: left;
+}
+
+main #content-form #submit {
+  position: relative;
+  margin: 1em auto;
+  display: block;
+  width: 90%;
+  border: 0;
+  padding: 0.5em;
+  background: rgba(197, 129, 28, 0.808);
+  color: white;
+  border-radius: 0.4em;
+  -webkit-border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  -ms-border-radius: 0.4em;
+  -o-border-radius: 0.4em;
+}
+
+main #content-form #box {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  width: 90%;
+  border: 0;
+  padding: 0.5em;
+  border-radius: 0.4em;
+  -webkit-border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  -ms-border-radius: 0.4em;
+  -o-border-radius: 0.4em;
+}
+
+main #content-form #box label {
+  background: #3235cd;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+main #content-form #box input {
+  margin: 0;
+  padding: 0;
+  background: #cd7032;
+  display: inline-block;
+  float: left;
 }
 
 main #footer {

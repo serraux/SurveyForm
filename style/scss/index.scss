@@ -84,7 +84,9 @@ main {
         color: white;
         font-family: Roboto, "Century Gothic", sans-serif;
       }
-      input {
+      input,
+      select,
+      textarea {
         position: relative;
         margin: 0 auto;
         display: block;
@@ -107,6 +109,48 @@ main {
         color: white;
         font-family: Roboto, "Century Gothic", sans-serif;
         text-align: left;
+      }
+    }
+    #submit {
+      position: relative;
+      margin: 1em auto;
+      display: block;
+      width: 90%;
+      border: 0;
+      padding: 0.5em;
+      background: rgba(197, 129, 28, 0.808);
+      color: white;
+      border-radius: 0.4em;
+      -webkit-border-radius: 0.4em;
+      -moz-border-radius: 0.4em;
+      -ms-border-radius: 0.4em;
+      -o-border-radius: 0.4em;
+    }
+    #box {
+      position: relative;
+      margin: 0 auto;
+      display: block;
+      width: 90%;
+      border: 0;
+      padding: 0.5em;
+      border-radius: 0.4em;
+      -webkit-border-radius: 0.4em;
+      -moz-border-radius: 0.4em;
+      -ms-border-radius: 0.4em;
+      -o-border-radius: 0.4em;
+      label {
+        background: rgb(50, 53, 205);
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        float: left;
+      }
+      input {
+        margin: 0;
+        padding: 0;
+        background: rgb(205, 112, 50);
+        display: inline-block;
+        float: left;
       }
     }
   }

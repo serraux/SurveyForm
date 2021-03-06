@@ -57,7 +57,6 @@
           <input type="date" name="date" id="date" required />
           <label for="hour" class=""> Hora </label>
           <input type="time" name="hour" id="hour" required />
-
           <label for="number" id="number-label"> Cantidad de personas </label>
           <input
             type="number"
@@ -69,10 +68,33 @@
             placeholder="número de personas"
           />
 
-          <label for="age" class=""> -----text </label>
-          <input type="text" name="age" id="age" class="block" />
-          <label for="age" class=""> -----text </label>
-          <input type="text" name="age" id="age" class="block" />
+          <label for="dropdown">¿Nos visitan con niños?</label>
+
+          <select name="dropdown" id="dropdown">
+            <option value="si">si</option>
+            <option value="no" selected>no</option>
+          </select>
+          <label
+            >¿Tiene alguna preferencia del menú que tenemos disponible?</label
+          >
+          <div id="box">
+            <input name="prefer" value="Frutos del mar" type="checkbox" />
+            <label>Frutos del mar</label>
+          </div>
+
+          <label for="suggestion">
+            Alguna recomendación que debamos tener en cuenta con su visita?
+          </label>
+          <textarea
+            id="suggestion"
+            name="suggestion"
+            rows="4"
+            cols="20"
+            style="resize: none"
+          ></textarea>
+
+          <button type="submit" id="submit">Submit</button>
+
           <label for="age" class=""> -----text </label>
           <input type="text" name="age" id="age" class="block" />
           <label for="age" class=""> -----text </label>
