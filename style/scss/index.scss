@@ -74,7 +74,7 @@ main {
       -moz-border-radius: 0.4em;
       -ms-border-radius: 0.4em;
       -o-border-radius: 0.4em;
-      label {
+      .label {
         position: relative;
         margin: 0.125em auto;
         width: 90%;
@@ -84,7 +84,7 @@ main {
         color: white;
         font-family: Roboto, "Century Gothic", sans-serif;
       }
-      input,
+      .input,
       select,
       textarea {
         position: relative;
@@ -139,18 +139,9 @@ main {
       -ms-border-radius: 0.4em;
       -o-border-radius: 0.4em;
       label {
-        background: rgb(50, 53, 205);
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        float: left;
-      }
-      input {
-        margin: 0;
-        padding: 0;
-        background: rgb(205, 112, 50);
-        display: inline-block;
-        float: left;
+        display: block;
+        margin: 15px;
+        color: white;
       }
     }
   }
@@ -183,7 +174,6 @@ main {
     }
     .footer-right {
       position: relative;
-      //margin: 0.5em;
       margin-left: 0;
       display: flex;
       flex-direction: column;

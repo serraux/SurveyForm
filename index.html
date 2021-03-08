@@ -10,7 +10,7 @@
       sizes="32x32"
       href="./img/favicon-32x32.ico"
     />
-    <link rel="stylesheet" href="../style/css/index.css" />
+    <link rel="stylesheet" href="./style/css/index.css" />
     <title>senses5</title>
   </head>
   <body>
@@ -24,10 +24,11 @@
         <p>Complete los datos siguientes para tener el gusto de atenderlo.</p>
 
         <form action="" id="survey-form">
-          <label for="name" class="label" id="name-label">
+          <label class="label" for="name" class="label" id="name-label">
             Nombres completos:
           </label>
           <input
+            class="input"
             type="text"
             name="name"
             id="name"
@@ -35,16 +36,20 @@
             required
             autofocus
           />
-          <label for="email" id="email-label"> Correo electrónico: </label>
+          <label class="label" for="email" id="email-label">
+            Correo electrónico:
+          </label>
           <input
+            class="input"
             type="text"
             name="email"
             id="email"
             required
             placeholder="correo@me.com"
           />
-          <label for="tel" class=""> Celular </label>
+          <label class="label" for="tel" class=""> Celular </label>
           <input
+            class="input"
             type="tel"
             name="tel"
             id="tel"
@@ -53,12 +58,15 @@
             placeholder="300-1234567"
           />
 
-          <label for="date" class=""> Fecha </label>
-          <input type="date" name="date" id="date" required />
-          <label for="hour" class=""> Hora </label>
-          <input type="time" name="hour" id="hour" required />
-          <label for="number" id="number-label"> Cantidad de personas </label>
+          <label class="label" for="date" class=""> Fecha </label>
+          <input class="input" type="date" name="date" id="date" required />
+          <label class="label" for="hour" class=""> Hora </label>
+          <input class="input" type="time" name="hour" id="hour" required />
+          <label class="label" for="number" id="number-label">
+            Cantidad de personas
+          </label>
           <input
+            class="input"
             type="number"
             name="Quanty-people"
             id="number"
@@ -68,21 +76,36 @@
             placeholder="número de personas"
           />
 
-          <label for="dropdown">¿Nos visitan con niños?</label>
+          <label class="label" for="dropdown">¿Nos visitan con niños?</label>
 
           <select name="dropdown" id="dropdown">
             <option value="si">si</option>
             <option value="no" selected>no</option>
           </select>
-          <label
+          <label class="label"
             >¿Tiene alguna preferencia del menú que tenemos disponible?</label
           >
+
           <div id="box">
-            <input name="prefer" value="Frutos del mar" type="checkbox" />
-            <label>Frutos del mar</label>
+            <label>
+              <input name="prefer" value="Frutos del mar" type="checkbox" />
+              Frutos del mar</label
+            >
+            <label>
+              <input name="prefer" value="Frutos del mar" type="checkbox" />
+              Carnes de res</label
+            >
+            <label>
+              <input name="prefer" value="Frutos del mar" type="checkbox" />
+              Carnes de cerdo</label
+            >
+            <label>
+              <input name="prefer" value="Frutos del mar" type="checkbox" />
+              Carnes de aves</label
+            >
           </div>
 
-          <label for="suggestion">
+          <label class="label" for="suggestion">
             Alguna recomendación que debamos tener en cuenta con su visita?
           </label>
           <textarea
@@ -95,14 +118,14 @@
 
           <button type="submit" id="submit">Submit</button>
 
-          <label for="age" class=""> -----text </label>
-          <input type="text" name="age" id="age" class="block" />
-          <label for="age" class=""> -----text </label>
-          <input type="text" name="age" id="age" class="block" />
-          <label for="age" class=""> -----text </label>
-          <input type="text" name="age" id="age" class="block" />
-          <label for="age" class=""> -----text </label>
-          <input type="text" name="age" id="age" class="block" />
+          <label class="label" for="age" class=""> -----text </label>
+          <input class="input" type="text" name="age" id="age" class="block" />
+          <label class="label" for="age" class=""> -----text </label>
+          <input class="input" type="text" name="age" id="age" class="block" />
+          <label class="label" for="age" class=""> -----text </label>
+          <input class="input" type="text" name="age" id="age" class="block" />
+          <label class="label" for="age" class=""> -----text </label>
+          <input class="input" type="text" name="age" id="age" class="block" />
         </form>
       </div>
 

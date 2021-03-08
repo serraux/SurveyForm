@@ -83,7 +83,7 @@ main #content-form #survey-form {
   -o-border-radius: 0.4em;
 }
 
-main #content-form #survey-form label {
+main #content-form #survey-form .label {
   position: relative;
   margin: 0.125em auto;
   width: 90%;
@@ -94,7 +94,7 @@ main #content-form #survey-form label {
   font-family: Roboto, "Century Gothic", sans-serif;
 }
 
-main #content-form #survey-form input,
+main #content-form #survey-form .input,
 main #content-form #survey-form select,
 main #content-form #survey-form textarea {
   position: relative;
@@ -153,19 +153,9 @@ main #content-form #box {
 }
 
 main #content-form #box label {
-  background: #3235cd;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  float: left;
-}
-
-main #content-form #box input {
-  margin: 0;
-  padding: 0;
-  background: #cd7032;
-  display: inline-block;
-  float: left;
+  display: block;
+  margin: 15px;
+  color: white;
 }
 
 main #footer {
