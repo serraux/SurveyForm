@@ -158,6 +158,16 @@ main #content-form #box label {
   color: white;
 }
 
+main #content-form #boxoption p {
+  text-align: left;
+}
+
+main #content-form #boxoption label {
+  display: block;
+  margin: 15px;
+  color: white;
+}
+
 main #footer {
   width: 100%;
   position: relative;
