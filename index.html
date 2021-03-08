@@ -15,6 +15,7 @@
   </head>
   <body>
     <main>
+      <!-- Encabezado -->
       <header><h1>Survey Form</h1></header>
 
       <!-- Contenido del formulario -->
@@ -41,7 +42,7 @@
           </label>
           <input
             class="input"
-            type="text"
+            type="email"
             name="email"
             id="email"
             required
@@ -116,16 +117,50 @@
             style="resize: none"
           ></textarea>
 
-          <button type="submit" id="submit">Submit</button>
+          <div id="boxoption">
+            <p class="label">
+              Para finalizar nos podría compartir por cuál medio se enteró de
+              nosotros.
+            </p>
+            <label for="instagram">
+              <input
+                type="radio"
+                name="media"
+                id="instagram"
+                value="Instagram"
+              />
+              Instagram
+            </label>
+            <label for="facebook">
+              <input type="radio" name="media" id="facebook" value="facebook" />
+              Facebook
+            </label>
+            <label for="google">
+              <input type="radio" name="media" id="google" value="google" />
+              Buscador de google
+            </label>
+            <label for="news">
+              <input type="radio" name="media" id="news" value="news" />
+              Publicación en periódico
+            </label>
+            <label for="friend">
+              <input type="radio" name="media" id="friend" value="friend" />
+              Recomendación de un amigo
+            </label>
+            <label for="other">
+              <input type="radio" name="media" id="other" value="other" />
+              Otro. Cual?
+              <input
+                class="other"
+                type="text"
+                name="other"
+                id="other"
+                placeholder="Otro medio"
+              />
+            </label>
+          </div>
 
-          <label class="label" for="age" class=""> -----text </label>
-          <input class="input" type="text" name="age" id="age" class="block" />
-          <label class="label" for="age" class=""> -----text </label>
-          <input class="input" type="text" name="age" id="age" class="block" />
-          <label class="label" for="age" class=""> -----text </label>
-          <input class="input" type="text" name="age" id="age" class="block" />
-          <label class="label" for="age" class=""> -----text </label>
-          <input class="input" type="text" name="age" id="age" class="block" />
+          <button type="submit" id="submit">Submit</button>
         </form>
       </div>
 
@@ -133,7 +168,12 @@
       <div id="footer">
         <div class="footer-left">
           <p>
-            Seventeen
+            <a
+              href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form"
+              target="_blank"
+              >Seventeen</a
+            >
+
             <a href="https://en.wikipedia.org/wiki/User_story" target="_blank"
               >User Story</a
             >
@@ -165,4 +205,5 @@
     </main>
   </body>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js?hl=es"></script>
 </html>
